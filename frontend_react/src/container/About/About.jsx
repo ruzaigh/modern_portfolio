@@ -42,4 +42,8 @@ const About = () => {
 
 // this is how we wrap or components 
 // and 'home' is the id 
-export default AppWrap(About, 'about' )
+export default AppWrap(
+ MotionWrap(About, 'app__about'),
+ 'about',
+ "app__whitebg"
+ );
